@@ -1,0 +1,10 @@
+tj:
+  xxl-job:
+    access-token: default_token
+    admin:
+      address: http://${NHZX_XXLJOB_HOST:localhost}:${NHZX_XXLJOB_PORT:9090}/xxl-job-admin
+    executor:
+      app-name: ${spring.application.name}
+      ip: ${NHZX_HOST_IP:127.0.0.1}
+      log-path: ./logs/xxl-job/${spring.application.name}
+      log-retention-days: 7

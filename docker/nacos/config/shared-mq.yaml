@@ -1,0 +1,20 @@
+spring:
+  rabbitmq:
+    host: ${NHZX_RABBITMQ_HOST:localhost}
+    port: ${NHZX_RABBITMQ_PORT:5672}
+    username: ${NHZX_RABBITMQ_USER:nhzx}
+    password: ${NHZX_RABBITMQ_PASSWORD:nhzx123}
+    virtual-host: /
+    publisher-confirm-type: correlated
+    publisher-returns: true
+    template:
+      mandatory: true
+    listener:
+      simple:
+        acknowledge-mode: auto
+        prefetch: 1
+        retry:
+          enabled: true
+          max-attempts: 3
+          initial-interval: 1000ms
+          multiplier: 2.0

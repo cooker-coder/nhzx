@@ -1,0 +1,9 @@
+spring:
+  data:
+    redis:
+      host: ${NHZX_REDIS_HOST:localhost}
+      port: ${NHZX_REDIS_PORT:16379}
+      password: ${NHZX_REDIS_PASSWORD:123456}
+      database: 0
+      timeout: 3000ms
+      client-type: lettuce
