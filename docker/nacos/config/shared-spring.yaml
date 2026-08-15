@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://${NHZX_MYSQL_HOST:localhost}:${NHZX_MYSQL_PORT:13306}/${tj.jdbc.database}?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true&rewriteBatchedStatements=true
+    url: jdbc:mysql://${NHZX_MYSQL_HOST:localhost}:${NHZX_MYSQL_PORT:13306}/${nhzx.jdbc.database}?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true&rewriteBatchedStatements=true
     username: ${NHZX_MYSQL_USER:root}
     password: ${NHZX_MYSQL_PASSWORD:123456}
     hikari:
