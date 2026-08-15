@@ -42,7 +42,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.nuaa.ZxGatewayApplication</mainClass>
+                    <mainClass>com.nuaa.GatewayApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>

@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.nuaa.authsdk.gateway.config.AuthAutoConfiguration

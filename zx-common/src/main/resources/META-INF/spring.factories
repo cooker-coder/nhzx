@@ -1,0 +1,9 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+ com.nuaa.common.autoconfigure.mq.MqConfig,\
+ com.nuaa.common.autoconfigure.mvc.JsonConfig,\
+ com.nuaa.common.autoconfigure.mvc.MvcConfig,\
+ com.nuaa.common.autoconfigure.mvc.ParamCheckerConfig,\
+ com.nuaa.common.autoconfigure.mybatis.MybatisConfig,\
+ com.nuaa.common.autoconfigure.redisson.RedissonConfig,\
+ com.nuaa.common.autoconfigure.swagger.Knife4jConfiguration, \
+ com.nuaa.common.autoconfigure.xxljob.XxlJobConfig

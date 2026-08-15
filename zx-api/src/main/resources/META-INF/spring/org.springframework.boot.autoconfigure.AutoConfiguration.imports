@@ -1,0 +1,4 @@
+com.nuaa.api.config.RequestIdRelayConfiguration
+com.nuaa.api.config.RoleCacheConfig
+com.nuaa.api.config.FallbackConfig
+com.nuaa.api.config.CategoryCacheConfig

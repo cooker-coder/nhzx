@@ -1,0 +1,19 @@
+{
+  "groups": [
+    {
+      "name": "nhzx.auth.gateway",
+      "type": "com.nuaa.authsdk.gateway.config.AuthAutoConfiguration",
+      "sourceType": "com.nuaa.authsdk.gateway.config.AuthProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "nhzx.auth.excludePath",
+      "type": "java.util.Set",
+      "description": "不用登录就能访问的路径，ant风格通配符",
+      "sourceType": "com.nuaa.authsdk.gateway.config.AuthProperties",
+      "defaultValue": ""
+    }
+  ],
+  "hints": []
+}
