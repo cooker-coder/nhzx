@@ -82,7 +82,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>com.nuaa.ZxMediaApplication</mainClass>
+                    <mainClass>com.nuaa.MediaApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>

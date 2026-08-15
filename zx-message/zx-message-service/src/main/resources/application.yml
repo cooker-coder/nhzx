@@ -1,0 +1,37 @@
+server:
+  port: 8085  #端口
+  tomcat:
+    uri-encoding: UTF-8   #服务编码
+spring:
+  profiles:
+    active: local
+  application:
+    name: message-service
+nhzx:
+  swagger:
+    enable: true
+    enableResponseWrap: true
+    package-path: com.nuaa.message.controller
+    title: 南航智学 - 消息中心接口文档
+    description: 该服务用于站内信、通知管理、短信发送等功能
+    contact-name: 开发组
+    contact-url: https://localhost
+    contact-email: dev@localhost
+    version: v1.0
+  auth:
+    resource:
+      enable: true
+      excludeLoginPaths:
+        - /students/register
+        - /users/detail/{isStaff}
+        - /users/list
+        - GET:/users/{id}
+        - /users/{id}/type
+        - /users/ids
+  jdbc:
+    database: nhzx_message
+  sms:
+    ali:
+      accessId: ${NHZX_ALI_ACCESS_ID:}
+      accessSecret: ${NHZX_ALI_ACCESS_SECRET:}
+

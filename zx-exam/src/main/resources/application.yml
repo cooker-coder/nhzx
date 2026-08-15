@@ -1,0 +1,27 @@
+server:
+  port: 8089  #端口
+  tomcat:
+    uri-encoding: UTF-8   #服务编码
+  error:
+    include-message: always #返回的响应体带上message
+spring:
+  profiles:
+    active: local
+  application:
+    name: exam-service
+nhzx:
+  swagger:
+    enable: true
+    enableResponseWrap: true
+    package-path: com.nuaa.exam.controller
+    title: 南航智学 - 考试中心接口文档
+    description: 该服务提供题目管理、考试管理、数据统计等功能
+    contact-name: 开发组
+    contact-url: https://localhost
+    contact-email: dev@localhost
+    version: v1.0
+  jdbc:
+    database: nhzx_exam
+  auth:
+    resource:
+      enable: false

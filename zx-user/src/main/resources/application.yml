@@ -1,0 +1,33 @@
+server:
+  port: 8082  #端口
+  tomcat:
+    uri-encoding: UTF-8   #服务编码
+spring:
+  profiles:
+    active: local
+  application:
+    name: user-service
+nhzx:
+  swagger:
+    enable: true
+    enableResponseWrap: true
+    package-path: com.nuaa.user.controller
+    title: 南航智学 - 用户中心接口文档
+    description: 该服务用户管理、用户信息管理
+    contact-name: 开发组
+    contact-url: https://localhost
+    contact-email: dev@localhost
+    version: v1.0
+  auth:
+    resource:
+      enable: false
+      excludeLoginPaths:
+        - /students/register
+        - /users/detail/{isStaff}
+        - /users/list
+        - GET:/users/{id}
+        - /users/{id}/type
+        - /users/ids
+        - /users/me
+  jdbc:
+    database: nhzx_user

@@ -1,0 +1,27 @@
+server:
+  port: 8090  #端口
+  tomcat:
+    uri-encoding: UTF-8   #服务编码
+spring:
+  profiles:
+    active: local
+  application:
+    name: learning-service
+nhzx:
+  swagger:
+    enable: true
+    enableResponseWrap: true
+    package-path: com.nuaa.learning.controller
+    title: 南航智学 - 学习中心接口文档
+    description: 该服务包含用户学习的各种辅助功能
+    contact-name: 开发组
+    contact-url: https://localhost
+    contact-email: dev@localhost
+    version: v1.0
+  jdbc:
+    database: nhzx_learning
+  auth:
+    resource:
+      enable: false
+  ai:
+    user-id: 9999

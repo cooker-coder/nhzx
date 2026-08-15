@@ -74,7 +74,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>com.nuaa.ZxRemarkApplication</mainClass>
+                    <mainClass>com.nuaa.RemarkApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>

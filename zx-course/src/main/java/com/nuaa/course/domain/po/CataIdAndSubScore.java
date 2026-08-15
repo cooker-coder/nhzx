@@ -1,0 +1,19 @@
+package com.nuaa.course.domain.po;
+
+import lombok.Data;
+
+/**
+ * 查询某个课程中练习对应的练习id和该练习对应的题目id
+ * @author 开源社区
+ * @since 2026-06-30
+ * @version 1.0.0
+ **/
+@Data
+public class CataIdAndSubScore {
+    //目录id
+    private Long cataId;
+    //题目id
+    private Long subjectId;
+    //题目对应的分
+    private Integer score;
+}

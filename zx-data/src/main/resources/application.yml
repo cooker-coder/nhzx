@@ -1,0 +1,25 @@
+server:
+  port: 8093  #端口
+  tomcat:
+    uri-encoding: UTF-8   #服务编码
+spring:
+  profiles:
+    active: local
+  application:
+    name: data-service
+nhzx:
+  swagger:
+    enable: true
+    enableResponseWrap: true
+    package-path: com.nuaa.data.controller
+    title: 南航智学 - 数据中心接口文档
+    description: 该服务包含数据看板统计的功能
+    contact-name: 开发组
+    contact-url: https://localhost
+    contact-email: dev@localhost
+    version: v1.0
+  jdbc:
+    database: nhzx_data
+  auth:
+    resource:
+      enable: true

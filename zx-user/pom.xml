@@ -68,7 +68,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.nuaa.ZxUserApplication</mainClass>
+                    <mainClass>com.nuaa.UserApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>
