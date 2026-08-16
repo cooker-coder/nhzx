@@ -91,7 +91,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>com.nuaa.ZxTradeApplication</mainClass>
+                    <mainClass>com.nuaa.TradeApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>
