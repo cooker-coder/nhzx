@@ -148,7 +148,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <mainClass>com.nuaa.ZxAiApplication</mainClass>
+                    <mainClass>com.nuaa.AIGCApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>

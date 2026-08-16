@@ -1,0 +1,53 @@
+server:
+  port: 8094  #端口
+  tomcat:
+    uri-encoding: UTF-8   #服务编码
+spring:
+  profiles:
+    active: local
+  application:
+    name: aigc-service
+  main:
+    allow-circular-references: true # 允许循环引用
+nhzx:
+  swagger:
+    enable: true
+    package-path: com.nuaa.aigc.controller
+    title: 南航智学 - AIGC接口文档
+    description: 该服务包含AI相关功能
+    contact-name: 开发组
+    contact-url: https://localhost
+    contact-email: dev@localhost
+    version: v1.0
+    enableResponseWrap: true
+  auth:
+    resource:
+      enable: true
+  jdbc:
+    database: nhzx_aigc #指定使用的数据库名
+  ai:
+    prompt:
+      system:
+        chat:
+          data-id: system-chat-message.txt
+          group: DEFAULT_GROUP
+          timeout-ms: 20000
+        route-agent:
+          data-id: route-agent-system-message.txt
+        recommend-agent:
+          data-id: recommend-agent-system-message.txt
+        buy-agent:
+          data-id: buy-agent-system-message.txt
+        text:
+          data-id: text-system-chat-message.txt
+    memory:
+      max: 100
+      type: Redis #对话记忆存储方式，Redis / MYSQL / MongoDB
+    chat-type: ENHANCE # ROUTE / ENHANCE / APP
+    audio-type: DASHSCOPE # OPENAI / DASHSCOPE
+  ali:
+    oss:
+      endpoint: oss-cn-shanghai.aliyuncs.com
+      access-id: ${OSS_ACCESSKEY_ID}
+      access-key: ${OSS_ACCESSKEY_SECRET}
+      bucket: nhzx-bucket
