@@ -1,0 +1,28 @@
+server:
+  port: 8083  #端口
+  tomcat:
+    uri-encoding: UTF-8   #服务编码
+spring:
+  profiles:
+    active: local
+  application:
+    name: search-service
+nhzx:
+  swagger:
+    enable: true
+    package-path: com.nuaa.search.controller
+    title: 南航智学 - 搜索系统接口文档
+    description: 该服务包含课程搜索、兴趣推荐等相关功能
+    contact-name: 开发组
+    contact-url: https://localhost
+    contact-email: dev@localhost
+    version: v1.0
+    enableResponseWrap: true
+  auth:
+    resource:
+      enable: true
+      includeLoginPaths:
+        - /interests/**
+        - /courses/admin
+  jdbc:
+    database: nhzx_search
